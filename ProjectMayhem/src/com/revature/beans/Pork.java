@@ -45,7 +45,7 @@ public class Pork {
 	}
 	@Override
 	public String toString() {
-		return "Pork [name=" + name + ", age=" + age + ", weight=" + weight + "]";
+		return "Pork [name = " + name + ", age = " + age + ", weight = " + weight + " lbs]";
 	}
 	
 }

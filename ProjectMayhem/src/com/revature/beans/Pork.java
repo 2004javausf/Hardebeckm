@@ -17,7 +17,29 @@ public class Pork {
 	 * instance methods - behavior relative to the specific object.
 	 * static methods - behavior relative to the entire class.
 	 * constructor - instantiates the class using the keyword "new"
+	 * 
+	 * code block - things in the curly braces{}  two types (instance and static)
 	 */
+	
+		// instance code block
+	{System.out.println("instance block");}
+	
+		//static code bloc
+	static {System.out.println("static block");}
+	
+	
+	// no args constructor
+	public Pork() {
+		System.out.println("traasshh");
+	}
+	
+	//constructor with fields
+	public Pork(String name, int age, int weight) {
+		this.name = name;
+		this.age = age;
+		this.weight = weight; //weight is method scope and this.weight is instance scope
+		System.out.print("yer ");
+	}
 	private String name;
 	private int age;
 	private int weight;

@@ -1,0 +1,21 @@
+no global scope in java because everything belongs to a class
+scope = "life-span of a variable"
+{} - define scope
+static/class scope
+	accessible to all members of a class
+	static variable will exist as long as that class is loaded in the compiler.
+	these get default values.
+method or local scope
+	accessible within the method it is declared in
+	do not get default values
+block scope
+	accessible within a code block
+	no default values
+instance scope
+	accessible inside of a particular object
+	do get default values
+	
+shadowing
+	what occurs when variables with different scopes have the same identifier
+	ex setters!
+	can also happen in between superclass and subclass variables

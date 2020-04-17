@@ -1,0 +1,6 @@
+polymorphism overloading order of operations
+
+1. exact match
+2. conversion - primitive or objects that cast themselves into other types (prim->prim or obj->obj)
+3. boxing/unboxing - going from prim to obj wrapper or obj wrapper to prim
+4. varargs - args wrapped into arrays

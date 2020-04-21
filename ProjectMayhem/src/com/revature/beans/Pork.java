@@ -2,6 +2,9 @@ package com.revature.beans;
 //packages are fancy folders. name space. creates folders for each new word in the package name
 // java package is java.lang
 
+import com.revature.classtypes.Animal;
+import com.revature.classtypes.Hunt;
+
 /*
  * naming conventions 
  * classes and projects: Pascal casing(capitalize first letter of each word)
@@ -9,7 +12,7 @@ package com.revature.beans;
  * packages: all lower-case and delimted by periods.
  * constants: all UPPER CASE
  */
-public class Pork {
+public class Pork extends Animal implements Hunt{
 	/*
 	 * members of a class - couple of forms
 	 * instance variables - property of a specific object
@@ -68,6 +71,18 @@ public class Pork {
 	@Override
 	public String toString() {
 		return "Pork [name = " + name + ", age = " + age + ", weight = " + weight + " lbs]";
+	}
+
+	@Override
+	public void findPrey() {
+	System.out.println("I don't hunt?");
+		
+	}
+
+	@Override
+	public void breathe() {
+		System.out.println("I breathe, yes.");
+		
 	}
 	
 }

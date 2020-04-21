@@ -41,9 +41,10 @@ public class Driver {
 	 * classes - blueprint or template of an object
 	 */
 	public static void main(String[] args) {
-		Date d = new Date();
+	/*	Date d = new Date();
 		Date e = new Date();
 		java.sql.Date f = new java.sql.Date(1);
+		*/
 		/* public - access modifier that allows method to be called from anywhere
 		 * static - do not need to instantiate to use.
 		 * void - does not return anything
@@ -63,5 +64,7 @@ public class Driver {
 		Pork s = new Pork();
 		s.setName("bit");
 		System.out.println(s);
+		p.findPrey();
+		p.breathe();
 	}
 }

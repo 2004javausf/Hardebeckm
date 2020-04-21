@@ -50,10 +50,14 @@ public class LoopyLoops {
 	 * good for access elements in one collection
 	 * bad for adding and removing
 	 */
+	static int z = 0;
 	static int [] myArray = {1,2,3,4000,5,6,7,8,9,10};
 	public static void forEach(int [] a) {
 		for(int t:a) {
-			System.out.println(t);
+			
+			z = t+z;
+			//System.out.println(t);
+			System.out.println(z);
 		}
 	}
 	

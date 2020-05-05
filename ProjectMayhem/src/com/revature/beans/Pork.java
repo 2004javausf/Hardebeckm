@@ -2,6 +2,8 @@ package com.revature.beans;
 //packages are fancy folders. name space. creates folders for each new word in the package name
 // java package is java.lang
 
+import java.io.Serializable;
+
 import com.revature.classtypes.Animal;
 import com.revature.classtypes.Hunt;
 
@@ -12,7 +14,12 @@ import com.revature.classtypes.Hunt;
  * packages: all lower-case and delimted by periods.
  * constants: all UPPER CASE
  */
-public class Pork extends Animal implements Hunt{
+public class Pork extends Animal implements Hunt,Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3086601403732015176L; // add the generated serialversion
+
 	/*
 	 * members of a class - couple of forms
 	 * instance variables - property of a specific object
